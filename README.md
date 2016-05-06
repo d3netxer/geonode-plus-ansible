@@ -7,18 +7,37 @@ Geonode consists of many components. Give yourself the peace of mind of letting 
 
 But this is not enough, Ansible takes this a step further by enabling further customizations to your GeoNode in a repeatable and automated fashion!
 
-## Step 1: Install Ansible
+## Step 1: Install Ansible and Install GeoNode
 
-1. On your server clone this repo
+1. Clone this repo on your server.
 
-2. Navigate to the script directory and run the ansible shell script ('source ansible.sh'). This will install ansible and the galaxy role (d3netxer.geonode-plus-ansible)
+2. Navigate to the script directory and run the ansible shell script ('source ansible.sh'). This will install ansible and the galaxy role (d3netxer.geonode-plus-ansible).
 
-3. Run un the play.yml playbook:
+3. Run the install-geonode-play.yml playbook:
 
 ```
-sudo ansible-playbook play.yml --connection=local
+sudo ansible-playbook install-geonode-play.yml --connection=local
 ```
 
+4. Create a superuser:
+
+```
+$ geonode createsuperuser
+```
+
+5. Set the IP address:
+
+```
+$ sudo geonode-updateip 127.0.0.1
+```
+
+
+## Optional: run additional plays
+
+
+
+
+## Additional Role Details
 
 d3netxer.geonode-plus-ansible
 =========
