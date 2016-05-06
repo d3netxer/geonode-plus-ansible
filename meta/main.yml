@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: Tom Gertin
+  author: TomGertin
   description: 
   company: your company (optional)
   # Some suggested licenses:
@@ -101,6 +101,7 @@ galaxy_info:
   #  - 9.2
   #  - 9.3
   - name: Ubuntu
+    - trusty
   #  versions:
   #  - all
   #  - lucid
@@ -111,7 +112,6 @@ galaxy_info:
   #  - quantal
   #  - raring
   #  - saucy
-    - trusty
   #  - utopic
   #  - vivid
   #  - wily
