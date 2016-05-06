@@ -9,7 +9,11 @@ But this is not enough, Ansible takes this a step further by enabling further cu
 
 ## Step 1: Install Ansible
 
+1. On your server clone this repo
 
+2. Navigate to the script directory and run the ansible shell script ('source ansible.sh'). This will install ansible.
+
+3. Navigate to the ansible directory and run the main-step1 playbook ('ansible-playbook main-step1.yml')
 
 
 

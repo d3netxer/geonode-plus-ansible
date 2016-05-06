@@ -1,2 +1,11 @@
 ---
-# tasks file for acme
+# tasks file
+
+- name: Add geonode/stable Repository
+  apt_repository: repo='ppa:geonode/stable' state=present update_cache=true
+  register: ppastable
+
+- name: Install GeoNode
+  apt: pkg=geonode state=installed update_cache=true
+  when: ppastable|success
+  register: geonodeinstalled
