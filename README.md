@@ -15,21 +15,21 @@ But this is not enough, Ansible takes this a step further by enabling further cu
 
 3. Run the install-geonode-play.yml playbook:
 
-```
-sudo ansible-playbook install-geonode-play.yml --connection=local
-```
+    ```
+    sudo ansible-playbook install-geonode-play.yml --connection=local
+    ```
 
 4. Create a superuser:
 
-```
-$ geonode createsuperuser
-```
+    ```
+    $ geonode createsuperuser
+    ```
 
 5. Set the IP address:
 
-```
-$ sudo geonode-updateip 127.0.0.1
-```
+    ```
+    $ sudo geonode-updateip 127.0.0.1
+    ```
 
 
 ## Optional: run additional plays
