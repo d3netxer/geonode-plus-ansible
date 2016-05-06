@@ -9,6 +9,18 @@ But this is not enough, Ansible takes this a step further by enabling further cu
 
 ## Step 1: Install Ansible
 
+```
+sudo apt-add-repository ppa:ansible/ansible -y
+sudo apt-get update -y
+sudo apt-get install ansible -y
+sudo ansible-galaxy install d3netxer.geonode-plus-ansible
+```
+
+ansible-playbook play.yml --connection=local
+
+
+
+old steps:
 1. On your server clone this repo
 
 2. Navigate to the script directory and run the ansible shell script ('source ansible.sh'). This will install ansible.

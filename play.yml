@@ -1,0 +1,4 @@
+---
+- hosts: localhost
+  roles:
+    - role: d3netxer.geonode-plus-ansible
