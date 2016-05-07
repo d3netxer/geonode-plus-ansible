@@ -11,7 +11,7 @@ But this is not enough, Ansible takes this a step further by enabling further cu
 
 1. Clone this repo on your server.
 
-2. Navigate to the script directory and run the ansible shell script ('source ansible.sh'). This will install ansible and the galaxy role (d3netxer.geonode-plus-ansible).
+2. run the install ansible shell script ('source install-ansible.sh'). This will install ansible and the galaxy role (d3netxer.geonode-plus-ansible).
 
 3. Run the install-geonode-play.yml playbook:
 
@@ -77,3 +77,9 @@ Author Information
 ------------------
 
 An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+
+
+
+## Additional tips
+
+manage.py is available only if you install it in custom installation. The command "geonode" is what you should use instead
